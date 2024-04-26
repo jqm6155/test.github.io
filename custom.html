@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <style>
+        body { display: flex; }
+        #sidebar { width: 300px; }
+        #main { flex-grow: 1; }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <img src="{{ page.sidebar_image }}" alt="Sidebar Image">
+        <p>{{ page.sidebar_description }}</p>
+    </div>
+    <div id="main">
+        {{ content }}
+    </div>
+</body>
+</html>
